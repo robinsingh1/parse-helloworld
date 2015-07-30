@@ -1,0 +1,51 @@
+body {
+}
+.flat .plan {
+  border-radius: 6px;
+  list-style: none;
+  padding: 0 0 20px;
+  margin: 0 0 15px;
+  background: #fff;
+  text-align: center;
+}
+.flat .plan li {
+  padding: 10px 15px;
+  color: #ccc;
+}
+.flat .plan li.plan-price {
+  border-top: 0;
+  border-bottom: 1px solid #eee;
+}
+.flat .plan li.plan-name {
+  border-radius: 6px 6px 0 0;
+  padding: 15px;
+  font-size: 28px;
+  line-height: 24px;
+  color: #fff;
+  background: #0294f5;
+  border-top: 0;
+  font-weight: bold;
+  font-family: proxima-nova;
+}
+.flat .plan li > strong {
+  color: #0294f5;
+}
+.flat .plan li.plan-action {
+  margin-top: 10px;
+  border-top: 0;
+}
+.flat .plan.featured {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.flat .plan.featured li.plan-name {
+}
+.flat .plan.featured:hover li.plan-name {
+}
+.flat .plan:hover li.plan-name {
+}
+#footer {
+  margin-top: 100px;
+  padding-bottom: 30px;
+}

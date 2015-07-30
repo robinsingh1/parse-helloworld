@@ -1,0 +1,82 @@
+
+<link rel="stylesheet" href="css/app.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://parse.com/downloads/javascript/parse-1.4.2.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      Parse.initialize("aBbOmPBkUou54VeIrtHhIU7a6PQSKEkXLCjm6cJf",
+                       "aOG2n3LjhwZxgkDSHqFYjgZ4bcABjsdxzt3uV6Oy")
+    })
+    function login() {
+      console.log("login")
+      $.ajax({
+        //url:'https//api.parse.com/1/login',
+        //url:'https://clearspark.parseapp.com/login',
+        url:'https://clearspark.parseapp.com/lmao',
+        //url:'/lmao',
+        headers: {
+          'Content-Type' : 'application/json'
+        },
+        type:'POST',
+        data: JSON.stringify({
+          'username':$('#email').val(),
+          'password':$('#password').val()
+        }),
+        success:function(res) {
+         //alertify.success('Logging in...')
+          //console.log(user)
+          localStorage.setItem('currentUser', JSON.stringify(res))
+          //location.href = "/app"
+        },
+        error: function(res) {
+          console.log(res)
+        }
+      });
+
+      /*
+      Parse.User.logIn($('#email').val(), $('#password').val(), {
+        success: function(user) {
+          // Do stuff after successful login.
+          console.log(user)
+          location.href = "/app"
+        },
+        error: function(user, error) {
+          console.log("error")
+          // The login failed. Check error to see why.
+        }
+      });
+        */
+    }
+  </script>
+<center>
+  <div style="height:'100%'">
+    <div id="signup" style="paddingTop:50">
+      <h1 class="title">Customero.</h1>
+      <h5 class="tagline">Generate high quality prospect lists. Accelerate Sales.</h5>
+          <div className="panel panel-default login-info" style={{display:'block',marginTop:50}}>
+            <div className="panel-body" style={{fontFamily:'proxima-nova',fontWeight:'bold'}}>
+              <form onSubmit={this.login}>
+              <input placeholder="Email" id="email" type="text" className="form-control input-lg"/>
+              <br/>
+              <input placeholder="First Name" type="text" id="first_name" className="form-control input-lg"/>
+              <br/>
+              <input placeholder="Last Name" type="text" id="last_name" className="form-control input-lg"/>
+              <br/>
+              <input placeholder="Phone Number" type="text" id="phone_number" class="form-control input-lg"/>
+              <br/>
+              <input placeholder="Company" type="text" id="company" className="form-control input-lg"/>
+              <br/>
+              <input placeholder="Password" type="password" id="password" className="form-control input-lg"/>
+              <br/>
+              <input placeholder="Repeat Password" type="password" id="repeat_password" className="form-control input-lg"/>
+              <br/>
+              <a href="javascript:" onClick={this.signup} className="btn btn-primary btn-lg" style={{display:'block',backgroundColor:'#1ca3fd', backgroundImage: 'linear-gradient(180deg, #0096ff 0%, #005dff 100%)',borderRadius:3,fontFamily:'proxima-nova',fontWeight:'bold'}}>Sign Up</a>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+</center>

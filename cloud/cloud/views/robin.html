@@ -1,0 +1,198 @@
+<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script>
+  $(document).ready(function() {
+    data = {
+  "particles": {
+    "number": {
+      "value": 38,
+      "density": {
+        "enable": true,
+        "value_area": 400
+      }
+    },
+    "color": {
+      "value": "#000"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.8,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 1.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#000",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2.5,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+    particlesJS('particles-js', data)
+    $("canvas").css({position:"absolute",top:0,left:300})
+  })
+</script>
+<div class="particles-js" id="particles-js">
+        <nav class="thenavbar navbar navbar-default" role="navigation" style="padding:70px; background-color: rgba(0,0,0,0); border: 0px;">
+          <div class="container-fluid" style="font-family:proxima-nova; font-size:12px">
+            <a href="/" style="text-decoration:none;color:black;font-size:20px">
+                <img src="img/bolt.png" style="height:14px;margin-top:-5px"/>
+                Robin Singh
+                <span style="font-size:10px;font-style:italic;">
+                  Builder.
+                </span>
+            </a>
+            <div style="padding-top:10px;padding-left:20px">
+                <div style="font-size:12px;padding-left:0px;padding-top:10px;"> Writing </div>
+                <div style="font-size:12px;padding-left:0px;padding-top:10px;"> Portfolio </div>
+                <div style="font-size:12px;padding-left:0px;padding-top:10px;"> Quotes </div>
+            </div>
+              <ul class="nav nav-pills landing-page-nav" role="tablist" style="margin-right:0px;font-size:11px;margin-top:-70px;display:none">
+                <li ><a class="landing-page-nav-tab" style="display:block" href="http://app.customero.co/#login">LOGIN</a></li>
+                <li><a class="landing-page-nav-tab" style="display:block" href="http://resources.customero.co/v1.0/blog">BLOG</a></li>
+                <li><a class="landing-page-nav-tab" href="http://resources.customero.co">RESOURCES</a></li>
+                <li><a class="landing-page-nav-tab" href="http://resources.customero.co/v1.0/discuss">KNOWLEDGE BASE</a></li>
+                <li><a class="landing-page-nav-tab" href="#">+1905-616-7602 <i class="fa fa-phone"></i></a></li>
+              </ul>
+          </div>
+          <a href="http://app.customero.co/#signup" class="btn-lg btn login-btn" style="font-family:proxima-nova">TRY IT</a>
+              <ul class="nav nav-pills landing-page-nav" role="tablist" style="width:600px;font-size:13px;display:none">
+                <li style="width:24%;text-align:center;display:block">&nbsp;</li>
+                <li style="width:24%;text-align:center;display:none">
+                <a class="landing-page-nav-tab lp-bottom-nav" 
+                  style="display:block" href="#">PRODUCT</a></li>
+                <li style="width:24%;text-align:center;display:none">
+                <a class="landing-page-nav-tab lp-bottom-nav" 
+                  style="display:block" href="#">DATA</a></li>
+                <li 
+                style="width:24%;text-align:center"><a class="landing-page-nav-tab lp-bottom-nav" style="display:block" href="/features">FEATURES</a></li>
+                <li style="width:24%;text-align:center;display:none">
+                <a class="landing-page-nav-tab lp-bottom-nav" 
+                    style="display:block" href="#">INTEGRATIONS</a></li>
+                <li style="width:24%;text-align:center"><a class="landing-page-nav-tab lp-bottom-nav" style="display:block" href="/pricing">PRICING</a></li>
+                <li  style="width:24%;text-align:center"><a class="landing-page-nav-tab lp-bottom-nav" style="display:block" href="/services">SERVICES</a></li>
+              </ul>
+        </nav>
+
+        <div class="container">
+        <div class="row" style="margin:0px;padding-top:260px;font-family:proxima-nova;font-size:12px;">
+          <span style="margin-left:50px ">Products</span>
+          <hr style="width:95%"/>
+          <br/>
+          <br/>
+            <div class="col-md-offset-1 col-md-2" style="text-align:center;">
+              <div style="box-shadow: rgba(0, 0, 0, 0.14902) 0px 6px 16px 0px; border-radius: 4px;height:50px;width:50px;padding:8px;padding-top:10px;display:block;margin-left:auto;margin-right:auto;margin-bottom:10px">
+              <img src="img/network.png" style="height:32px;"/>
+            </div>
+              Customero</div>
+            <div class="col-md-2" style="text-align:center">
+              <div style="box-shadow: rgba(0, 0, 0, 0.14902) 0px 6px 16px 0px; border-radius: 4px;height:50px;width:50px;padding:8px;padding-top:10px;display:block;margin-left:auto;margin-right:auto;margin-bottom:10px;">
+              <img src="img/home.png" style="height:32px;"/>
+            </div>
+              ClearSpark</div>
+            <div class="col-md-2" style="text-align:center">
+              <div style="box-shadow: rgba(0, 0, 0, 0.14902) 0px 6px 16px 0px; border-radius: 4px;height:50px;width:50px;padding:8px;padding-top:10px;display:block;margin-left:auto;margin-right:auto;margin-bottom:10px;">
+              <img src="img/noun_61238_cc.png" style="height:32px;"/>
+              </div>
+              SignalIQ</div>
+            <div class="col-md-2" style="text-align:center">
+              <div style="box-shadow: rgba(0, 0, 0, 0.14902) 0px 6px 16px 0px; border-radius: 4px;height:50px;width:50px;padding:8px;padding-top:10px;display:block;margin-left:auto;margin-right:auto;margin-bottom:10px;">
+              <img src="img/noun_54676_cc.png" style="height:32px;"/>
+            </div>
+              ProspectIQ</div>
+            <div class="col-md-2" style="text-align:center">
+              <div style="box-shadow: rgba(0, 0, 0, 0.14902) 0px 6px 16px 0px; border-radius: 4px;height:50px;width:50px;padding:8px;padding-top:10px;display:block;margin-left:auto;margin-right:auto;margin-bottom:10px;">
+              <img src="img/noun_41611_cc.png" style="height:32px;"/>
+            </div>
+              OutreachIQ</div>
+            
+<script src="particles.js"></script>
+<script src="//use.typekit.net/wzk7jom.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>

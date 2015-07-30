@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "helloworld": {
+            "applicationId": ""
+            "masterKey": ""
+        }, 
+        "_default": {
+            "link": "helloworld"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}
